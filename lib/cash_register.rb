@@ -19,17 +19,7 @@ class CashRegister
   
 end
 
-require 'pry'
 
-class CashRegister
-  attr_accessor :total, :discount, :price 
-  attr_reader :items 
-  
-  def initialize(discount = 0)
-    @total = 0 
-    @discount = discount
-    @items = []
-  end 
   
 
 
