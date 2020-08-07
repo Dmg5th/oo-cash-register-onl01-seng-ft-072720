@@ -11,6 +11,7 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @total += price * quantity 
+    @items.push(title)
   end 
   
   def apply_discount 
@@ -19,9 +20,10 @@ class CashRegister
       "There is no discount to apply."
     else 
     "After the discount, the total comes to $#{total}."
+    end 
   end 
-    
-  end 
+  
+  
   
  
   
